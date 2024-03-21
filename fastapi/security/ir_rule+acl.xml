@@ -34,11 +34,6 @@
 
     <!-- restrict the access by the user running the demo app to its own partner
     and the authenticated one-->
-    <record id="res_partner_fastapi_running_user_rule" model="ir.rule">
-        <field name="name">Fastapi: Running user rule</field>
-        <field name="model_id" ref="base.model_res_partner" />
-        <field name="groups" eval="[(4, ref('group_fastapi_endpoint_runner'))]" />
-    </record>
 
     <!-- give access by the user running the demo app to the fastapi.enddoint model -->
     <record id="fastapi_endpoint_fastapi_running_user" model="ir.model.access">
